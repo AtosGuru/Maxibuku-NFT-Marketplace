@@ -1,0 +1,25 @@
+.section {
+    &-head {
+        padding-bottom: 34px;
+        &-sm {
+            padding-bottom: 34px;
+        }
+        br {
+            display: none;
+        }
+    }
+}
+// Responsive breakpoint
+@include media-breakpoint-up(lg) {
+    .section {
+        &-head {
+            padding-bottom: 45px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            br {
+                display: inline-block;
+            }
+        }
+    }
+}

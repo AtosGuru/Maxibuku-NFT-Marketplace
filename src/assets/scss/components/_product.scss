@@ -1,0 +1,17 @@
+.item-detail {
+    &-text {
+        &-meta {
+            font-weight: $fw-medium;
+        }
+    }
+    &-section {
+        padding-top: 50px;
+    }
+}
+@include media-breakpoint-up(md){
+    .item-detail {
+        &-section {
+            padding-top: 70px;
+        }
+    }
+}

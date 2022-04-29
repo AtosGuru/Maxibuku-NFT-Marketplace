@@ -1,0 +1,30 @@
+.item-detail {
+    &-title {
+        font-size: $fs-9;
+    }
+    &-content {
+        height: 100%;
+    }
+    &-img-full {
+        height: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .item-detail {
+        &-title {
+            font-size: $fs-7;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .item-detail {
+        &-title {
+            font-size: 2.25rem;
+        }
+    }
+}

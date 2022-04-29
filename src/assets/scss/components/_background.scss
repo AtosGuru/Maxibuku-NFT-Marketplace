@@ -1,0 +1,79 @@
+.bg-gradient {
+    background: $base-100 !important;
+    background: linear-gradient(to bottom, $base-100 0%, $white 100%) !important;
+}
+.bg-gradient-2 {
+    background: $base-500 !important;
+    background: linear-gradient(to bottom, $base-500 0%, $white 100%) !important;
+}
+.bg-gray {
+    background: $base-200!important;
+}
+.bg-dark-transparent {
+    background: linear-gradient(to bottom, transparent 5%, $headding-color 100%)!important;
+}
+.bg-dark {
+    background: $headding-color !important;
+}
+.bg-white-slim {
+    background-color: rgba($white, 0.2)!important;
+}
+.bg-pattern,
+.bg-pattern-2,
+.bg-pattern-3 {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0; 
+        background-image: url("../../images/thumb/bg-transparent.png");
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+.bg-pattern {
+    &-2 {
+        &::after {
+            background-image: url("../../images/thumb/bread-bg.jpg");
+        }
+    }
+}
+
+/* bg */
+.bg {
+    &-red-100 {
+        background-color: $red-100 !important;
+    }
+    &-blue-100 {
+        background-color: $blue-100 !important;
+    }
+    &-purple-100 {
+        background-color: $purple-100 !important;
+    }
+    &-indigo-100 {
+        background-color: $indigo-100 !important;
+    }
+    &-pink-100 {
+        background-color: $pink-100 !important;
+    }
+    &-orange-100 {
+        background-color: $orange-100 !important;
+    }
+    &-yellow-100 {
+        background-color: $yellow-100 !important;
+    }
+    &-green-100 {
+        background-color: $green-100 !important;
+    }
+    &-teal-100 {
+        background-color: $teal-100 !important;
+    }
+    &-cyan-100 {
+        background-color: $cyan-100 !important;
+    }
+}
